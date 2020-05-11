@@ -1,5 +1,9 @@
 const puppeteer = require('puppeteer');
 
+module.exports = {
+    scrapeProduct
+}
+
 async function scrapeProduct(url) {
     const browser = await puppeteer.launch(); // launches headerless browser 
     const page = await browser.newPage(); // opens a new page/tab
@@ -27,8 +31,17 @@ async function scrapeProduct(url) {
 
     description = description.trim(); // gets rid of erroneous characters  
 
-    console.log({ launchDate, mission, description }); // outputs the three fields in one object 
+    // console.log({ launchDate, mission, description }); // outputs the three fields in one object 
+
+    const together = { // formats data for exporting
+        date: launchDate, 
+        mission: mission, 
+        desc: description};
+
+    console.log(together, 'this is all together');
+
+    return together; // what is logged when used in "displaying.js"
 
 }
 
-scrapeProduct('https://www.nasa.gov/launchschedule/');
+// module.exports = scrapeProduct('https://www.nasa.gov/launchschedule/');
