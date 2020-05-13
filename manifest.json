@@ -1,0 +1,12 @@
+{
+  "name": "Next Space Shuttle Launch",
+  "version": "1.0",
+  "description": "Extension that tells you when the next NASA space shuttle launch is.",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+
+  "browser_action": {
+    "page": "displaying.html"
+  },
+ 
+  "manifest_version": 2
+}

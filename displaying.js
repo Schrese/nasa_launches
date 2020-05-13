@@ -1,6 +1,10 @@
-const Scrape = require('./scrapers'); // seem to be having an issue using "require" on the browser, but I am guessing it will be solved when we introduce it to the extension by using the manifest
 
-Scrape.scrapeProduct('https://www.nasa.gov/launchschedule/') // using function from scrapers.js
+"use strict";
+
+var _scrapers = require("./scrapers.js");
+
+
+scrapeProduct('https://www.nasa.gov/launchschedule/') // using function from scrapers.js
     .then(res => {
         console.log(res, 'from displaying.js')
         let data = res; // returns "together" object from scrapers.js
@@ -12,7 +16,7 @@ Scrape.scrapeProduct('https://www.nasa.gov/launchschedule/') // using function f
 
 const launch = document.getElementById('launch'); // have a problem with "document" but should be solved with manifest
 
-function createInfo(obj) { // creates content to be displayed
+ function createInfo(obj) { // creates content to be displayed
 
     const info = document.createElement('div'); // full div
     const launchDate = document.createElement('p'); // date
@@ -28,3 +32,8 @@ function createInfo(obj) { // creates content to be displayed
 
     return info;
 }
+
+
+
+
+

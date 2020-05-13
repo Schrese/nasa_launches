@@ -1,7 +1,6 @@
 {
   "name": "nasa_launch_scraper",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +8,32 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "externals": {
+    "puppeteer-core": "require(\"puppeteer-core\")",
+    "puppeteer": "require(\"puppeteer\")"
+  },
   "dependencies": {
-    "puppeteer": "^3.0.4"
-  }
+    "browserify": "^16.5.1",
+    "express": "^4.17.1",
+    "git": "^0.1.5",
+    "pug": "^2.0.4",
+    "puppeteer": "^3.0.4",
+    "puppeteer-core": "^3.0.4",
+    "websocket": "^1.0.31"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "babelify": "^10.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schrese/nasa_launches.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Schrese/nasa_launches/issues"
+  },
+  "homepage": "https://github.com/Schrese/nasa_launches#readme",
+  "description": ""
 }
