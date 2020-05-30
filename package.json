@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "browserify": "^16.5.1",
+    "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "git": "^0.1.5",
+    "jsonframe-cheerio": "^3.0.1",
     "pug": "^2.0.4",
     "puppeteer": "^3.0.4",
     "puppeteer-core": "^3.0.4",
