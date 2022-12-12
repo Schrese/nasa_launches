@@ -16,7 +16,7 @@
     "axios": "^0.19.2",
     "browserify": "^16.5.1",
     "cheerio": "^1.0.0-rc.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "git": "^0.1.5",
     "jsonframe-cheerio": "^3.0.1",
     "pug": "^2.0.4",
